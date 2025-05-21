@@ -32,5 +32,20 @@ int main()
     std::cout << sizeof(prices) << " bytes in size\n"; // prints the size of the array in bytes
     std::cout << sizeof(prices)/sizeof(double) << " elements in array\n"; // prints the size of the array in bytes
 
+
+    std::cout << "Example 3: Iterating through an array\n";
+
+    std::string students[] = {"spongebob", "patrick",  "squidward", "Sandy"};
+
+    for(int i = 0; i < sizeof(students)/sizeof(std::string); i++) //calulates number of elements in array and sets that as the limit for the loop
+    {
+        std::cout << students[i] << '\n'; // prints the variable stored at the first memeory address
+    }
+
+    char grades[] = {'A', 'B', 'C', 'D', 'F'}; // array of chars
+    for(int i = 0; i < sizeof(grades)/sizeof(char); i++) //calulates number of elements in array and sets that as the limit for the loop
+    {
+        std::cout << grades[i] << '\n'; // prints the variable stored at the first memeory address
+    }
     return 0;
 }
